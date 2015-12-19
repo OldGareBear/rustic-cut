@@ -7,4 +7,5 @@ urlpatterns = patterns('',
     url(r'^$', 'rustic_cut.views.index', 'rustic_cut_index'),
     url(r'^$', 'rustic_cut.views.about', 'rustic_cut_about'),
     url(r'^$', 'rustic_cut.views.contact', 'rustic_cut_contact'),
+    url(r'^$', 'rustic_cut.views.products', 'rustic_cut_products'),
 )
