@@ -40,7 +40,7 @@ if not DEBUG:
     STATIC_URL = '//rustic-cut-dev.s3.amazonaws.com/static/'
     MEDIA_URL = '//rustic-cut-dev.s3.amazonaws.com/media/'
 else:
-    STATIC_URL = '//localhost:8000/static/'
-    MEDIA_URL = '//localhost:8000/media/'
+    STATIC_URL = '/static/'
+    MEDIA_URL = '/media/'
     STATIC_ROOT = '/static'
     MEDIA_ROOT = '/media'
