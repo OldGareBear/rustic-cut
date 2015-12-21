@@ -40,6 +40,50 @@
                 </nav><!--//main-nav-->
             </div><!--//container-->
         </header><!--//header-->
+
+        {% block content %}{% endblock %}
+
+        <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col links col-md-2 col-sm-4 col-xs-12">
+                        <div class="footer-col-inner">
+
+                            <ul class="list-unstyled">
+                                <li><a href="{% url 'rustic_cut_about' %}"><i class="fa fa-caret-right"></i>Who we are</a></li>
+                                <li><a href="{% url 'rustic_cut_products' %}" target="_blank"><i class="fa fa-caret-right"></i>Products</a></li>
+                            </ul>
+                        </div><!--//footer-col-inner-->
+                    </div><!--//foooter-col-->
+                    <div class="footer-col links col-md-2 col-sm-4 col-xs-12 sm-break">
+                        <div class="footer-col-inner">
+
+                            <ul class="list-unstyled">
+                                <li><a href="{% url 'rustic_cut_contact' %}"><i class="fa fa-caret-right"></i>Contact us</a></li>
+                            </ul>
+                        </div><!--//footer-col-inner-->
+                    </div><!--//foooter-col-->
+                    <div class="footer-col connect col-md-6 col-sm-12 col-xs-12">
+                        <div class="footer-col-inner">
+                            <ul class="social list-inline">
+                                <li><a href="http://twitter.com/chicoryco" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="http://facebook.com/chicoryco" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://pinterest.com/chicoryco" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="http://instagram.com/chicoryco" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div><!--//footer-col-inner-->
+                    </div><!--//foooter-col-->
+                    <div class="clearfix"></div>
+                </div><!--//row-->
+            </div><!--//container-->
+        </div><!--//footer-content-->
+        <div class="bottom-bar">
+            <div class="container">
+                <small class="copyright">Copyright @ 2015 Rustic Cut Wood Working</small>
+            </div><!--//container-->
+        </div><!--//bottom-bar-->
+    </footer><!--//footer-->
 </body>
 
 </html>
