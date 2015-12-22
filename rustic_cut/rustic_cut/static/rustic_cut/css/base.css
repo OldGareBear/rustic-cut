@@ -1,3 +1,12 @@
 .top-logo{
     height: 100px;
+    float: left;
+}
+
+.header {
+    background-color: #002266;
+}
+
+.nav-iterm > a {
+    color: white;
 }
