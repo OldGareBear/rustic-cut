@@ -11,8 +11,8 @@ def about(request):
 
 
 def contact(request):
-    return render_to_response("rustic_cut/contact/about.html", {}, context_instance=RequestContext(request))
+    return render_to_response("rustic_cut/html/about.html", {}, context_instance=RequestContext(request))
 
 
 def products(request):
-    return render_to_response("rustic_cut/contact/products.html", {}, context_instance=RequestContext(request))
+    return render_to_response("rustic_cut/html/products.html", {}, context_instance=RequestContext(request))

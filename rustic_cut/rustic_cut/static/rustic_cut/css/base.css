@@ -3439,7 +3439,6 @@ select {
   }
   .header.scrolled {
     background: rgba(5, 107, 36, .75);
-    opacity: .75;
     z-index: 1000;
     height: 75px;
     top: 0;
