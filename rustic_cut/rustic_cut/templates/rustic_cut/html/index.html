@@ -1,3 +1,70 @@
 {% extends "rustic_cut/html/base.html" %}
+{% load staticfiles %}
 
-HOME
+{% block content %}
+    <div class="bg-slider-wrapper">
+        <div class="flexslider bg-slider">
+            <ul class="slides" style="padding-left:0;">
+                <li class="slide slide-1" style="background:#253340 {% if featured_product and featured_product.hero_image_uri  %} url({{ featured_product.hero_image_uri.url }}) {% else %} url({% static 'rustic_cut/img/wood_floor.jpg' %}) {% endif %} no-repeat 50% top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></li>
+            </ul>
+        </div>
+    </div><!--//bg-slider-wrapper-->
+
+    <section class="promo section section-on-bg">
+        <div class="container text-center">
+            <h2 class="title">We Make Custom Furniture</h2>
+            <p class="intro">Check out our
+                <b>
+                <a class="featured" href="{% if featured_product %}{{ featured_product.name }}{% else %}/products/{% endif %}" target="_blank">
+                    {% if featured_product %}{{ featured_product.name }}{% else %}Wood Floor{% endif %}
+                </a>
+                </b>
+            </p>
+        </div><!--//container-->
+
+    </section><!--//promo-->
+    
+    <div class="sections-wrapper">
+        <!-- ******Testimonials Section****** -->
+        <section class="section testimonials">
+            <div class="container">
+                <h2 class="title text-center">What are people saying about Rustic Cut?</h2>
+                <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonials-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonials-carousel" data-slide-to="1"></li>
+                        <li data-target="#testimonials-carousel" data-slide-to="2"></li>
+                    </ol><!--//carousel-indicators-->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="content">
+                                <blockquote>
+                                <p><i class="fa fa-quote-left"></i>[Rustic Cut Wood Working] may revolutionize the online recipe landscape.</p>
+                                </blockquote>
+                                <p class="source">Daniela Galarza <br /><span class="title">Writer, Furniture lover</span></p>
+                            </div><!--//content-->
+                        </div><!--//item-->
+                        <div class="item">
+                            <div class="content">
+                                <blockquote>
+                                <p><i class="fa fa-quote-left"></i>When I found out about Rustic Cut, I was so excited for all people who like wood.</p>
+                                </blockquote>
+                                <p class="source">Becky McNeer<br /><span class="title">Blogger and Writer, Not Your Ordinary Furniture</span></p>
+                            </div><!--//content-->
+                        </div><!--//item-->
+                        <div class="item">
+                            <div class="content">
+                                <blockquote>
+                                <p><i class="fa fa-quote-left"></i>@rustic-cut is one of the best companies I've come across in the past couple years ... cheers to much #success ... #craftsmanship</p>
+                                </blockquote>
+                                <p class="source">@Craftology<br /></p>
+                            </div><!--//content-->
+                        </div><!--//item-->
+                    </div><!--//carousel-inner-->
+
+                </div><!--//carousel-->
+            </div><!--//container-->
+        </section><!--//testimonials-->
+    </div>
+    
+{% endblock %}

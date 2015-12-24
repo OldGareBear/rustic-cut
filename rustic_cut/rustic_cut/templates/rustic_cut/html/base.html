@@ -6,16 +6,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Rustic Cut Wood Working</title>
-    <link rel="icon" type="image/png" href="{% static 'rustic_cut/img/favicon.png' %}">
 
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" ></script>
+    <script type="text/javascript" src="{%static 'rustic_cut/js/base.js' %}"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.css">
     <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     <link href="{% static 'rustic_cut/css/base.css' %}" rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="{% static 'rustic_cut/img/favicon.png' %}">
 </head>
 
 <body>
-    <header id="header" class="header navbar-fixed-top" style="background:#002266">
+    <header id="header" class="header navbar-fixed-top">
             <div class="container">
                 <h1 class="logo">
                     <a href="{% url 'rustic_cut_index' %}"><img class="img-responsive top-logo" src="{% static 'rustic_cut/img/rustic-cut-logo-clear-background.png'%}" alt="" /></a>
