@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
-from rustic_cut.models import Product
+from rustic_cut.models import Product, Category
 
 
 def index(request):
@@ -24,3 +24,23 @@ def contact(request):
 
 def products(request):
     return render_to_response("rustic_cut/html/products.html", {}, context_instance=RequestContext(request))
+
+
+def product(request, product_id):
+    product = Product.objects.get(id=product_id)
+    context = {
+        'product': product
+    }
+    return render_to_response("rustic_cut/html/product.html", context, context_instance=RequestContext(request))
+    
+    
+def categories(request):
+    return render_to_response("rustic_cut/html/categories.html", {}, context_instance=RequestContext(request))
+
+
+def category(request, category_id):
+    category = Category.objects.get(id=category_id)
+    context = {
+        'category': category
+    }
+    return render_to_response("rustic_cut/html/category.html", context, context_instance=RequestContext(request))

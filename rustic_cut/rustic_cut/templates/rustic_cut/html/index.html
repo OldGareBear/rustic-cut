@@ -15,7 +15,7 @@
             <h2 class="title">We Make Custom Furniture</h2>
             <p class="intro">Check out our
                 <b>
-                <a class="featured" href="{% if featured_product %}{{ featured_product.name }}{% else %}/products/{% endif %}" target="_blank">
+                <a class="featured" href="{% if featured_product %}products/{{ featured_product.id }}{% else %}/products/{% endif %}" target="_blank">
                     {% if featured_product %}{{ featured_product.name }}{% else %}Wood Floor{% endif %}
                 </a>
                 </b>
