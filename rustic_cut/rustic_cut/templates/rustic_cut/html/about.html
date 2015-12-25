@@ -1,2 +1,26 @@
 {% extends "rustic_cut/html/base.html" %}
 {% load staticfiles %}
+
+{% block content %}
+    <div class="headline-bg partners-headline-bg"></div>
+
+    <!-- ******Video Section****** -->
+    <section class="story-section section section-on-bg">
+        <h2 class="title container text-center">Rustic Cut Wood Working</h2>
+        <div class="story-container container text-center">
+            <div class="story-container-inner" >
+                
+                <section class="partners-featured"><!--featured blogger -->
+                    <h3>It all started whenever it started</h3>
+                    <div class='about-photo' style="background: url({% static 'rustic_cut/img/mark_palmer.jpg' %}) no-repeat;background-size: cover;"></div>
+                    <br>
+                    <p>Mark decided he was the boy and he would make things with wood.</p>
+                    <div class="text-center" style="padding-top:50px padding-bottom:50px">
+                        <a class="btn btn-cta btn-cta-secondary" style="font-size:100%" href="/products/">See the gallery</a>
+                    </div>
+                </section><!--featured blogger -->
+
+            </div><!--//story-container-->
+        </div><!--//container-->
+    </section><!--//story-video-->
+{% endblock %}

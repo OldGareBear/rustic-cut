@@ -63,8 +63,8 @@ a.btn-cta-primary:hover,
 }
 a.btn-cta-secondary,
 .btn-cta-secondary {
-  background: #0ab4ba;
-  border: 2px solid rgb(5, 25, 107);
+  background: rgb(5, 107, 36);
+/*  border: 2px solid rgb(5, 25, 107);*/
   color: #fff;
   font-size:20px;
 }
@@ -469,7 +469,7 @@ select {
   background-image: url('../img/background/GrocerBg.jpg')
 }
 .headline-bg.partners-headline-bg{
-  background-image: url('../img/hero-recipe-photos/rootbeer-float-cupcake-dark.jpg')
+  background-image: url('../img/wood_floor.jpg')
 }
 .headline-bg.jobs.jobs-headline-bg{
   background-color: #00478F
@@ -3605,4 +3605,10 @@ select {
 .beta-bg {
   background-image: url('../img/herbs.jpg');
   background-size: cover;
+}
+.about-photo {
+    height: 300px;
+    width: 250px;
+    margin: auto;
+    border-radius: 50px;
 }
