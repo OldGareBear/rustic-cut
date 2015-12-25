@@ -5,7 +5,7 @@
     <div class="bg-slider-wrapper">
         <div class="flexslider bg-slider">
             <ul class="slides" style="padding-left:0;">
-                <li class="slide slide-1" style="background:#253340 {% if featured_product and featured_product.hero_image_uri  %} url({{ featured_product.hero_image_uri.url }}) {% else %} url({% static 'rustic_cut/img/wood_floor.jpg' %}) {% endif %} no-repeat 50% top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></li>
+                <li class="slide slide-1" style="background:#253340 {% if featured_product %} url({{ featured_product.photo.url }}) {% else %} url({% static 'rustic_cut/img/wood_floor.jpg' %}) {% endif %} no-repeat 50% top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></li>
             </ul>
         </div>
     </div><!--//bg-slider-wrapper-->

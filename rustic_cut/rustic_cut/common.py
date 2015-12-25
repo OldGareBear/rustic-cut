@@ -32,7 +32,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rustic_cut'
+    
+    'django_extensions',
+    
+    'rustic_cut',
 )
 
 MIDDLEWARE_CLASSES = (
