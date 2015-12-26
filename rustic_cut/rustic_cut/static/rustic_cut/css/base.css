@@ -3606,9 +3606,14 @@ select {
   background-image: url('../img/herbs.jpg');
   background-size: cover;
 }
+
 .about-photo {
     height: 300px;
     width: 250px;
     margin: auto;
     border-radius: 50px;
+}
+
+.product-caption {
+    margin-bottom: 0;
 }

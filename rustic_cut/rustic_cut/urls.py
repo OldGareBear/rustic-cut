@@ -13,9 +13,7 @@ urlpatterns = patterns('',
 
     url(r'^products/$', 'rustic_cut.views.products', name='rustic_cut_products'),
     url(r'^products/(?P<product_id>\d+)$', 'rustic_cut.views.product', name='rustic_cut_product'),
-
-    url(r'^products/categories/$', 'rustic_cut.views.categories', name='rustic_cut_categories'),
-    url(r'^products/categories/(?P<category_id>\d+)$', 'rustic_cut.views.category', name='rustic_cut_category'),
+    url(r'^products/category/(?P<category_id>\d+)$', 'rustic_cut.views.category', name='rustic_cut_category'),
 )\
     + static('/static/', document_root=settings.STATIC_ROOT) \
     + static('/media/', document_root=settings.MEDIA_ROOT)

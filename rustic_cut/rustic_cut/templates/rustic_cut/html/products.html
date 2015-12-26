@@ -1,2 +1,70 @@
 {% extends "rustic_cut/html/base.html" %}
 {% load staticfiles %}
+
+{% block content %}
+<div class="bg-slider-wrapper">
+    <div class="flexslider bg-slider">
+        <ul class="slides" style="padding-left:0;">
+            <li class="slide slide-1" style="background:#666 no-repeat 50% top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-4" style="float:right;width:17%;">
+    <div class="well">
+        <h3>Categories</h3>
+        </br>
+        {% for category in categories %}
+        <a href="/products/category/{{ category.id }}">{{ category.name }}</a>
+        </br></br>
+        {% endfor %}
+        <p></p>
+    </div>
+</div>
+    
+<div class="container" style="width:80%;margin-top:10%;margin-left:3%">
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-4">
+            <div class="well">
+                <img class="thumbnail img-responsive" alt="Bootstrap template" 
+                    src="{{ product.photo.url }}" />
+                <p class="product-caption">{{ product.name }}</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="well">
+                <img class="thumbnail img-responsive" alt="Bootstrap template" 
+                    src="{{ product.photo.url }}" />
+                <p class="product-caption">{{ product.name }}</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="well">
+                <img class="thumbnail img-responsive" alt="Bootstrap template" 
+                    src="{{ product.photo.url }}" />
+                <p class="product-caption">{{ product.name }}</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="well">
+                <img class="thumbnail img-responsive" alt="Bootstrap template" 
+                    src="{{ product.photo.url }}" />
+                <p class="product-caption">{{ product.name }}</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="well">
+                <img class="thumbnail img-responsive" alt="Bootstrap template" 
+                    src="{{ product.photo.url }}" />
+                <p class="product-caption">{{ product.name }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

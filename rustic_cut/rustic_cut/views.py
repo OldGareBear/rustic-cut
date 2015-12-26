@@ -19,11 +19,17 @@ def about(request):
 
 
 def contact(request):
-    return render_to_response("rustic_cut/html/about.html", {}, context_instance=RequestContext(request))
+    return render_to_response("rustic_cut/html/contact.html", {}, context_instance=RequestContext(request))
 
 
 def products(request):
-    return render_to_response("rustic_cut/html/products.html", {}, context_instance=RequestContext(request))
+    products = Product.objects.all()
+    categories = Category.objects.all()
+    context = {
+        'products': products,
+        'categories': categories
+    }
+    return render_to_response("rustic_cut/html/products.html", context, context_instance=RequestContext(request))
 
 
 def product(request, product_id):
@@ -33,10 +39,6 @@ def product(request, product_id):
     }
     return render_to_response("rustic_cut/html/product.html", context, context_instance=RequestContext(request))
     
-    
-def categories(request):
-    return render_to_response("rustic_cut/html/categories.html", {}, context_instance=RequestContext(request))
-
 
 def category(request, category_id):
     category = Category.objects.get(id=category_id)
