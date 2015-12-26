@@ -3617,3 +3617,42 @@ select {
 .product-caption {
     margin-bottom: 0;
 }
+
+.col-md-4.right-sidebar {
+    float:right;
+    width:18%;
+    min-width: 152px;
+}
+
+.col-md-4.right-sidebar > .well {
+    min-width: 152px;
+}
+
+.panes.container {
+    width:80%;
+    margin-top:10%;
+    margin-left:2%
+}
+
+@media (max-width: 991px) {
+    .col-md-4.right-sidebar {
+        margin-top: 10%;
+        width: 30%;
+    }
+    
+    .panes.container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 595px) {
+    .panes.container {
+        width: 100%;
+        margin-left:0;
+    }
+    
+    .col-md-4.right-sidebar {
+        float: none;
+        width: 100%;
+    }
+}

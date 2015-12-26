@@ -10,7 +10,7 @@
     </div>
 </div>
 
-<div class="col-md-4" style="float:right;width:17%;">
+<div class="right-sidebar col-md-4">
     <div class="well">
         <h3>Categories</h3>
         </br>
@@ -22,14 +22,14 @@
     </div>
 </div>
     
-<div class="container" style="width:80%;margin-top:10%;margin-left:3%">
+<div class="panes container">
     <div class="row">
         {% for product in products %}
         <div class="col-md-4">
             <div class="well">
                 <img class="thumbnail img-responsive" alt="Bootstrap template" 
                     src="{{ product.photo.url }}" />
-                <p class="product-caption">{{ product.name }}</p>
+                <a class="product-caption" href='/products/{{ product.id }}'>{{ product.name }}</a>
             </div>
         </div>
         
