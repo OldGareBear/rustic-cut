@@ -1,6 +1,10 @@
 {% extends "rustic_cut/html/base.html" %}
 {% load staticfiles %}
 
+{% block extra_header_attrs %}
+style="background:rgba(5, 107, 36, .75);"
+{% endblock %}
+
 {% block extra_scripts %}
 <script type="text/javascript" src="{%static 'rustic_cut/js/products.js' %}"></script>
 {% endblock %}
@@ -9,7 +13,7 @@
 <div class="bg-slider-wrapper">
     <div class="flexslider bg-slider">
         <ul class="slides" style="padding-left:0;">
-            <li class="slide slide-1" style="background:#666 no-repeat 50% top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></li>
+            <li class="slide slide-1" style="background:white no-repeat 50% top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></li>
         </ul>
     </div>
 </div>

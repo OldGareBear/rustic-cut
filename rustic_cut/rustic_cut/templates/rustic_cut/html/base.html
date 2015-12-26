@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header id="header" class="header navbar-fixed-top">
+    <header id="header" class="header navbar-fixed-top" {% block extra_header_attrs %}{% endblock %}>
             <div class="container">
                 <h1 class="logo">
                     <a href="{% url 'rustic_cut_index' %}"><img class="img-responsive top-logo" src="{% static 'rustic_cut/img/rustic-cut-logo-clear-background.png'%}" alt="" /></a>
