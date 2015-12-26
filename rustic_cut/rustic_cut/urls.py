@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     url(r'^$', 'rustic_cut.views.index', name='rustic_cut_index'),
     url(r'^about/$', 'rustic_cut.views.about', name='rustic_cut_about'),
     url(r'^contact/$', 'rustic_cut.views.contact', name='rustic_cut_contact'),
+    url(r'^contact/submit/$', 'rustic_cut.views.contact_submit', name='rustic_cut_contact_submit'),
 
     url(r'^products/$', 'rustic_cut.views.products', name='rustic_cut_products'),
     url(r'^products/(?P<product_id>\d+)$', 'rustic_cut.views.product', name='rustic_cut_product'),

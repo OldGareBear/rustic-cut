@@ -1,2 +1,35 @@
 {% extends "rustic_cut/html/base.html" %}
 {% load staticfiles %}
+
+{% block content %}
+    <div class="headline-bg contact-headline-bg"></div><!--//headline-bg-->
+        <!-- ******Contact Section****** -->
+        <section class="contact-section section section-on-bg">
+            <div class="container">
+                <h2 class="title text-center">Contact Us</h2>
+                <p class="intro text-center" id="interested">Interested? Inquiries? We’d love to hear from you.</p>
+                <p class="intro text-center" id="successLocation"></p>
+                {% include "rustic_cut/modals/contact.html" %}
+            </div><!--//container-->
+        </section><!--//contact-section-->
+        <!-- ******Other Contact Section****** -->
+        <section class="contact-other-section section">
+            <div class="container text-center">
+                <h2 class="title">Other ways to reach us</h2>
+                <p class="intro">You can also get in touch with us at our various social media outlets. </p>
+                <div class="row">
+                    <ul class="other-info list-unstyled col-md-6 col-sm-10 col-xs-12 col-md-offset-3 col-sm-offset-1 xs-offset-0" >
+                        <li><i class="fa fa-envelope-o"></i><a href="#">rusticcutwoodworking@gmail.com</a></li>
+                        <li><i class="fa fa-facebook"></i><a href="http://facebook.com/rustic_cut" target="_blank">RusticCut</a></li>
+                        <li><i class="fa fa-twitter"></i><a href="http://twitter.com/rustic_cut" target="_blank">@rusticcut</a></li>
+                        <li><i class="fa fa-pinterest"></i><a href="http://pinterest.com/rustic_cut" target="_blank">@rusticcut</a></li>
+                        <li><i class="fa fa-instagram"></i><a href="http://instagram.com/rustic_cut" target="_blank">@rusticcut</a></li>
+                    </ul>
+                </div><!--//row-->
+            </div><!--//container-->
+        </section><!--//contact-other-section-->
+{% endblock %}
+
+{% block extra-scripts %}
+    <script type="text/javascript" src="pages_v3/js/jquery.validate.min.js"></script>
+{% endblock %}
