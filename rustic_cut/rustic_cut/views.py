@@ -41,8 +41,10 @@ def product(request, product_id):
     
 
 def category(request, category_id):
-    category = Category.objects.get(id=category_id)
+    products = Product.objects.filter(id=category_id)
+    categories = Category.objects.all()
     context = {
-        'category': category
+        'products': products,
+        'categories': categories
     }
-    return render_to_response("rustic_cut/html/category.html", context, context_instance=RequestContext(request))
+    return render_to_response("rustic_cut/html/products.html", context, context_instance=RequestContext(request))

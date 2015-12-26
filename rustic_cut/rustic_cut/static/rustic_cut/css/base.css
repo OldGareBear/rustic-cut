@@ -3656,3 +3656,7 @@ select {
         width: 100%;
     }
 }
+
+.panes .well {
+    text-align: center;
+}
