@@ -22,3 +22,6 @@ class Product(models.Model):
 
     def to_json(self):
         return json.dumps(self.to_dict())
+    
+    def __unicode__(self):
+        return self.name
