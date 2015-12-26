@@ -3634,6 +3634,14 @@ select {
     margin-left:2%
 }
 
+.detailed-view.container {
+    margin-top:5%;
+}
+
+.panes .well {
+    text-align: center;
+}
+
 @media (max-width: 991px) {
     .col-md-4.right-sidebar {
         margin-top: 10%;
@@ -3655,8 +3663,4 @@ select {
         float: none;
         width: 100%;
     }
-}
-
-.panes .well {
-    text-align: center;
 }
