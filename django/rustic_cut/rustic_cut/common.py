@@ -39,6 +39,8 @@ INSTALLED_APPS = (
     'django_extensions',
     
     'rustic_cut',
+    # Storage backends.
+    'storages'
 )
 
 MIDDLEWARE_CLASSES = (
