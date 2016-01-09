@@ -1,3 +1,8 @@
+import json
+import logging
+
+from django.core.mail import send_mail
+from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 
@@ -40,7 +45,8 @@ def contact_submit(request):
         message = contact_form.cleaned_data["message"]
         name = contact_form.cleaned_data["name"]
         full_email = name + "<" + user_email + ">"
-        send_mail("A message from %s %s" % (name, user_email), message, full_email,  ['hello@chicoryapp.com'])
+        
+        send_mail("A message from %s %s" % (name, full_email), message, user_email,  ['rusticcutwoodworking@gmail.com'])
 
         response = {
             'status': 'ok',
@@ -49,6 +55,8 @@ def contact_submit(request):
         return HttpResponse(json.dumps(response), content_type="application/json")
 
     except Exception as e:
+        logging.info("{} {} {} {}".format(name, user_email, message, full_email))
+        
         response = {
             'status': 'error',
             'message': e.message
