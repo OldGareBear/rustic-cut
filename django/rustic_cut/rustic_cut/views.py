@@ -33,45 +33,45 @@ def contact(request):
 
 def contact_submit(request):
 
-    # try:
-#         if not request.method == 'POST':
-#             raise Exception("Invalid Protocol")
-#
-#         contact_form = ContactForm(request.POST)
-#         if not contact_form.is_valid():
-#             raise Exception("Validation Error")
-#
-#         user_email = contact_form.cleaned_data["email"]
-#         message = contact_form.cleaned_data["message"]
-#         name = contact_form.cleaned_data["name"]
-#         full_email = name + "<" + user_email + ">"
-#
-#         send_mail("A message from %s %s" % (name, full_email), message, user_email,  ['rusticcutwoodworking@gmail.com'])
-#
-#         response = {
-#             'status': 'ok',
-#             'message': "Thank you for reaching out to us, we will get back to you as soon as possible."
-#         }
-#         return HttpResponse(json.dumps(response), content_type="application/json")
-    if not request.method == 'POST':
-        raise Exception("Invalid Protocol")
+    try:
+        if not request.method == 'POST':
+            raise Exception("Invalid Protocol")
 
-    contact_form = ContactForm(request.POST)
-    if not contact_form.is_valid():
-        raise Exception("Validation Error")
+        contact_form = ContactForm(request.POST)
+        if not contact_form.is_valid():
+            raise Exception("Validation Error")
 
-    user_email = contact_form.cleaned_data["email"]
-    message = contact_form.cleaned_data["message"]
-    name = contact_form.cleaned_data["name"]
-    full_email = name + "<" + user_email + ">"
-    
-    send_mail("A message from %s %s" % (name, full_email), message, user_email,  ['rusticcutwoodworking@gmail.com'])
+        user_email = contact_form.cleaned_data["email"]
+        message = contact_form.cleaned_data["message"]
+        name = contact_form.cleaned_data["name"]
+        full_email = name + "<" + user_email + ">"
 
-    response = {
-        'status': 'ok',
-        'message': "Thank you for reaching out to us, we will get back to you as soon as possible."
-    }
-    return HttpResponse(json.dumps(response), content_type="application/json")
+        send_mail("A message from %s %s" % (name, full_email), message, user_email,  ['rusticcutwoodworking@gmail.com'])
+
+        response = {
+            'status': 'ok',
+            'message': "Thank you for reaching out to us, we will get back to you as soon as possible."
+        }
+        return HttpResponse(json.dumps(response), content_type="application/json")
+    # if not request.method == 'POST':
+    #     raise Exception("Invalid Protocol")
+    #
+    # contact_form = ContactForm(request.POST)
+    # if not contact_form.is_valid():
+    #     raise Exception("Validation Error")
+    #
+    # user_email = contact_form.cleaned_data["email"]
+    # message = contact_form.cleaned_data["message"]
+    # name = contact_form.cleaned_data["name"]
+    # full_email = name + "<" + user_email + ">"
+    #
+    # send_mail("A message from %s %s" % (name, full_email), message, user_email,  ['rusticcutwoodworking@gmail.com'])
+    #
+    # response = {
+    #     'status': 'ok',
+    #     'message': "Thank you for reaching out to us, we will get back to you as soon as possible."
+    # }
+    # return HttpResponse(json.dumps(response), content_type="application/json")
         
 
 def products(request):
