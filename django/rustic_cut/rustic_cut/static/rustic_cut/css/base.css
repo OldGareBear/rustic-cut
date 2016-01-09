@@ -386,42 +386,36 @@ select {
   height: 780px;
 }
 .bg-slider-wrapper .flexslider .slide.slide-2 {
-  background: #253340 url('../img/hero-recipe-photos/cinnamon-rolls-dark.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .bg-slider-wrapper .flexslider .slide.slide-3 {
-  background: #253340 url('../img/hero-recipe-photos/beet-burger-dark.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .bg-slider-wrapper .flexslider .slide.slide-4 {
-  background: #253340 url('../img/hero-recipe-photos/burger-sticks-dark.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .bg-slider-wrapper .flexslider .slide.slide-5 {
-  background: #253340 url('../img/hero-recipe-photos/lime-cheesecake-dark.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .bg-slider-wrapper .flexslider .slide.slide-6 {
-  background: #253340 url('../img/hero-recipe-photos/pound-cake-dark.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .bg-slider-wrapper .flexslider .slide.slide-7 {
-  background: #253340 url('../img/hero-recipe-photos/rootbeer-float-cupcake-dark.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -444,29 +438,14 @@ select {
   top: 0;
   left: 0;
   height: 500px;
-  background: #253340 url('../img/background/bg-header-small-1.jpg') no-repeat 50% top;
+  background: #253340;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.headline-bg.pricing-headline-bg {
-  background-image: url('../img/background/bg-header-small-2.jpg');
-}
 .headline-bg.contact-headline-bg {
   background-image: url('../img/wood_floor.jpg');
-}
-.headline-bg.about-headline-bg {
-  background-image: url('../img/hero-recipe-photos/beet-burger-dark.jpg');
-}
-.headline-bg.brands-headline-bg{
-  background-image: url('../img/background/BrandBg.jpg')
-}
-.headline-bg.publishers-headline-bg{
-  background-image: url('../img/background/PublisherBg.jpg')
-}
-.headline-bg.grocers-headline-bg{
-  background-image: url('../img/background/GrocerBg.jpg')
 }
 .headline-bg.partners-headline-bg{
   background-image: url('../img/wood_floor.jpg')
@@ -803,18 +782,12 @@ select {
 }
 /* ======= cta-section ======= */
 .cta-section {
-  background: #253340 url('../img/hero-recipe-photos/burger-sticks-dark.jpg') no-repeat left top;
+  background: #253340;
   background-size: cover;
   min-height: 420px;
   color: #fff;
   padding-top: 80px;
   border: none;
-}
-.cta-section.pricing-cta-section {
-  background-image: url('../img/background/bg-footer-2.jpg');
-}
-.cta-section.contact-cta-section {
-  background-image: url('../img/background/bg-footer-3.jpg');
 }
 .cta-section .title {
   font-size: 36px;
@@ -1297,7 +1270,7 @@ select {
 /* ======= Download Apps ======= */
 .download-page .headline-bg {
   height: 1200px;
-  background: #253340 url('../img/background/bg-mobile-headline.jpg') no-repeat 50% top;
+  background: #253340;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1322,7 +1295,6 @@ select {
   width: 324px;
   height: 651px;
   display: block;
-  background: url('../img/mobile/iphone.png') no-repeat left top;
   position: relative;
 }
 .apps-section .phone-holder .screenshot {
@@ -1617,28 +1589,24 @@ select {
   z-index: 10;
 }
 .blog-slider .slide.slide-1 {
-  background: #253340 url('../img/blog/post-1.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .blog-slider .slide.slide-2 {
-  background: #253340 url('../img/blog/post-2.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .blog-slider .slide.slide-3 {
-  background: #253340 url('../img/blog/post-3.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .blog-slider .slide.slide-4 {
-  background: #253340 url('../img/blog/post-4.jpg') no-repeat 50% top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1671,7 +1639,6 @@ select {
 .blog-slider .flex-direction-nav a.flex-prev:before {
   content: "";
   text-indent: -9999px;
-  background: url('../img/flexslider/carousel-arrow-prev.png') no-repeat left top;
   display: block;
   width: 30px;
   height: 50px;
@@ -1682,7 +1649,6 @@ select {
 .blog-slider .flex-direction-nav a.flex-next:before {
   content: "";
   text-indent: -9999px;
-  background: url('../img/flexslider/carousel-arrow-next.png') no-repeat right top;
   display: block;
   width: 30px;
   height: 50px;
@@ -1850,7 +1816,7 @@ select {
   margin-bottom: 60px;
   position: relative;
   height: 500px;
-  background: #253340 url('../img/blog/post-2.jpg') no-repeat 50% top;
+  background: #253340;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -2428,14 +2394,14 @@ select {
 }
 /* ======= Login Page ======= */
 .has-full-screen-bg .upper-wrapper {
-  background: #253340 url('../img/background/bg-screen-1.jpg') no-repeat 50% top;
+  background: #253340;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .has-full-screen-bg.signup-page .upper-wrapper {
-  background: #253340 url('../img/background/bg-screen-2.jpg') no-repeat 50% top;
+  background: #253340;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3603,7 +3569,6 @@ select {
 }
 
 .beta-bg {
-  background-image: url('../img/herbs.jpg');
   background-size: cover;
 }
 
