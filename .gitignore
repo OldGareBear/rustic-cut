@@ -1,4 +1,5 @@
 settings.py
 *.pyc
 */.DS_Store
-*.idea/*
+*.idea*
+db.sqlite

@@ -83,7 +83,8 @@ def product(request, product_id):
     
 
 def category(request, category_id):
-    products = Product.objects.filter(id=category_id)
+    category = Category.objects.get(id=category_id)
+    products = category.products.all()
     categories = Category.objects.all()
     context = {
         'products': products,
